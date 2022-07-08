@@ -27,23 +27,24 @@ public class Feedback {
 	private String email;
 	
 	@Column(name = "mobile")
-	private String phone;
+	private String mobile;
 	
-	@Column(name = "panNumber")
+	@Column(name = "pancard")
 	private String pancard;
+	
 	
 	@Column(name = "feedback")
 	private String feedback;
 	
 	public Feedback() {};
 	
-	public Feedback(int id, String fname, String lname, String email, String phone, String pancard, String feedback) {
+	public Feedback(int id, String fname, String lname, String email, String mobile, String pancard, String feedback) {
 		super();
 		this.id=id;
 		this.fname = fname;
 		this.lname = lname;
 		this.email = email;
-		this.phone = phone;
+		this.mobile = mobile;
 		this.pancard = pancard;
 		this.feedback = feedback;
 	}
@@ -80,12 +81,12 @@ public class Feedback {
 		this.email = email;
 	}
 
-	public String getPhone() {
-		return phone;
+	public String getMobile() {
+		return mobile;
 	}
 
-	public void setPhone(String phone) {
-		this.phone = phone;
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
 	}
 
 	public String getPancard() {
